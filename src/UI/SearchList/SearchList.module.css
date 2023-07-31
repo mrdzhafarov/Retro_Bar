@@ -1,0 +1,34 @@
+.searchBlock {
+  width: 100%;
+  min-height: 30px;
+  height: auto;
+  margin-top: 2px;
+  background: var(--orange-text);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  transition: all 1s linear;
+}
+.searchBlock ul {
+  list-style: none;
+  margin: 0;
+}
+.searchBlock ul li {
+  width: 100%;
+  height: 27px;
+  border-top: solid 1px rgb(24, 24, 24);
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchBlock img {
+  width: 20px;
+  height: auto;
+}
+
+.searchBlock li:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,164 @@
+.main_container {
+  height: 330px;
+  width: 450px;
+  position: relative;
+}
+
+.smile {
+  position: absolute;
+  top: -108px;
+  right: 0;
+  height: 38%;
+}
+
+.title_main_container {
+  display: flex;
+  justify-content: center;
+}
+
+.window {
+  /*Будет равен Main-container */
+  height: 100%;
+  /* Будет равен Main-container */
+  width: 100%;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  margin-left: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  align-items: center;
+  height: 100%;
+  scroll-snap-align: start;
+}
+
+.all_pages_container {
+  height: 100%;
+  display: flex;
+  transition: translate;
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.item_container {
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.item_1 {
+  background-image: url(../../assets/NewsPages/image/Fon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.background_container {
+  height: 241px;
+  width: 196px;
+  margin-right: 49px;
+  position: absolute;
+  top: 33px;
+  right: 6px;
+}
+
+.text {
+  position: absolute;
+  top: 5px;
+  bottom: 15px;
+  right: 12px;
+  text-align: center;
+  font-size: 11px;
+  line-height: 18px;
+  color: white;
+  transform: rotate(1deg);
+  max-width: 100%;
+  max-height: 91%;
+}
+
+.img {
+  left: 26px;
+  top: 33px;
+  width: 176px;
+  height: 223px;
+  transform: rotate(1deg);
+  position: absolute;
+}
+
+.background {
+  height: 229px;
+  width: 189px;
+}
+
+@media (max-width: 470px) {
+  .main_container {
+    height: 277px;
+    width: 356px;
+  }
+  .img {
+    left: 20px;
+    top: 26px;
+    width: 151px;
+    height: 193px;
+    transform: rotate(1deg);
+    position: absolute;
+  }
+  .background_container {
+    height: 193px;
+    width: 140px;
+    margin-right: 0px;
+    top: 27px;
+    right: 48px;
+  }
+  .background {
+    height: 197px;
+    width: 156px;
+  }
+  .text {
+    left: 3px;
+    font-size: 9px;
+    line-height: 14px;
+    min-width: 107%;
+    min-height: 97%;
+  }
+  .img {
+    left: 20px;
+    top: 26px;
+    width: 151px;
+    height: 193px;
+  }
+}
+
+@media (max-width: 376px) {
+  .main_container {
+    height: 244px;
+    width: 298px;
+  }
+  .img {
+    left: 16px;
+    top: 22px;
+    width: 131px;
+    height: 165px;
+  }
+  .background_container {
+    height: 166px;
+    top: 24px;
+    right: 13px;
+  }
+  .background {
+    height: 168px;
+    width: 134px;
+  }
+  .text {
+    left: 3px;
+    font-size: 9px;
+    line-height: 14px;
+    min-width: 91%;
+    min-height: 97%;
+  }
+}
